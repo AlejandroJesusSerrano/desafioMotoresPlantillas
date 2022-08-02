@@ -1,0 +1,40 @@
+include ./layout.pug 
+
+
+div(class=container)
+    h1(class=formTitle) Por favor completa los datos del formulario
+        form(action="/PRODUCTS" method="POST")
+            div(class="title")
+                label(for="title") Ingrese el titulo:
+                input.form(name="title" id="title"  type="text")
+            div(class="price")
+                label(for="price") Ingrese el precio de venta:
+                input.form(name="price" id="price"  type="number")
+            div(class="image")
+                label(for="imgAf") Suba una imgen:
+                input.form(type="file" id="imgAf" name="imgAf")
+            div(class="desc")
+                label(for="description") Escriba un abreve descricion del producto:
+                input.form(name="description" id="description"  type="text")
+            div(class="universe")
+                label(for="universe") Seleccione en que universo se clasifica:
+                select(name="universe" id="universe")
+                    option(value="Marvel") Marvel
+                    option(value="DC") DC
+                    option(value="Funko") Funkos
+                    option(value="StarWars") Star Wars
+                    option(value="MangaAnime") Manga & Anime
+                    option(value="HarryPotter") Harry Potter
+                    option(value="SportsArtists") Sports & Artists
+            div(class="details")
+                label(for="details") Ingrese una breve descripcion:
+                textarea(name="details" id="details" cols="30" rows="10"/textarea)
+            div(class="stok")
+                label (for="stock") Cuantos productos pondrà en stock?:
+                input.form (name="stock" id="stock"  type="number")
+            div(class="submitBtn")
+                button(id="addProduct" type="submit" class=" addProduct")
+                    span Agregar
+            a(href="/productsList")
+                button Ver Todos
+        

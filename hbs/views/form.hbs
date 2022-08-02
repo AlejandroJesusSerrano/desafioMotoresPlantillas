@@ -1,0 +1,50 @@
+<div class="container">
+        <h1 class="formTitle" > Por favor completa los datos del formulario </h1>
+        <form action="/products" method="post">
+            <div class="title">
+                <label for="title">Ingrese el titulo:</label>
+                <input name="title" id="title"  type="text">
+            </div>
+            <div class="price">
+                <label for="price">Ingrese el precio de venta:</label>
+                <input name="price" id="price"  type="number">
+            </div>
+            <div class="image">
+                <label for="imgAf">Suba una imgen:</label>
+                <input type="file" id="imgAf" name="imgAf">
+            </div>
+            <div class="desc">
+                <label for="description">Escriba un abreve descricion del producto:</label>
+                <input name="description" id="description"  type="text">
+            </div>
+            <div class="universe">
+                <label for="universe">Seleccione en que universo se clasifica:</label>
+                <select name="universe" id="universe">
+                    <option value="Marvel">Marvel</option>
+                    <option value="DC">DC</option>
+                    <option value="Funko">Funkos</option>
+                    <option value="StarWars">Star Wars</option>
+                    <option value="MangaAnime">Manga & Anime</option>
+                    <option value="HarryPotter">Harry Potter</option>
+                    <option value="SportsArtists">Sports & Artists</option>
+                </select>
+            </div>
+            <div class="details">
+                <label for="details">Ingrese una breve descripcion:</label>
+                <textarea name="details" id="details" cols="30" rows="10"></textarea>
+            </div>
+            <div class="stok">
+                <label for="stock">Cuantos productos pondrà en stock?:</label>
+                <input name="stock" id="stock"  type="number">
+            </div>
+            <div class="submitBtn">
+                <button id="addProduct" type="submit" class=" addProduct">
+                    <span>Agregar</span>
+                </button>
+            </div>
+            
+            <a href="/">
+                <button>Ver Todos</button>
+            </a>
+        </form>
+    </div>
