@@ -7,14 +7,6 @@ const routerProducts = require("./routes/products");
 const products = "./files/products.json";
 const af = new Container(products);
 
-
-const hbs = handlebars.create({
-    extname: '.hbs',
-    defaultLayout: 'index.hbs', 
-    layoutsDir: __dirname + '/views/layout',
-});    
-
-app.engine('hbs', hbs.engine);
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
